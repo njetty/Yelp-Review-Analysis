@@ -110,7 +110,7 @@ else
     echo "File yelp_academic_dataset_business.json not found at $YELP_PATH, skipping the import for Business"
 fi
 
-if [[ -f "YELP_PATH/yelp_academic_dataset_tip.json"]]; then
+if [[ -f "$YELP_PATH/yelp_academic_dataset_tip.json" ]]; then
     echo " "
     echo "Importing Tip Collection"
     mongoimport --db yelp --collection tip --file "$YELP_PATH/yelp_academic_dataset_tip.json"
@@ -118,7 +118,7 @@ else
     echo "File yelp_academic_dataset_tip.json not found at $YELP_PATH, skipping the import for Tip"
 fi
 
-if [[ -f "YELP_PATH/yelp_academic_dataset_review.json"]]; then
+if [[ -f "$YELP_PATH/yelp_academic_dataset_review.json" ]]; then
     echo " "
     echo "Importing Review Collection"
     mongoimport --db yelp --collection reviews --file "$YELP_PATH/yelp_academic_dataset_review.json"
@@ -126,7 +126,7 @@ else
     echo "File yelp_academic_dataset_review.json not found at $YELP_PATH, skipping the import for Review"
 fi
 
-if [[ -f "YELP_PATH/yelp_academic_dataset_checkin.json"]]; then
+if [[ -f "$YELP_PATH/yelp_academic_dataset_checkin.json" ]]; then
     echo " "
     echo "Importing Checkin Collection"
     mongoimport --db yelp --collection checkin --file "$YELP_PATH/yelp_academic_dataset_checkin.json"
@@ -134,7 +134,7 @@ else
     echo "File yelp_academic_dataset_checkin.json not found at $YELP_PATH, skipping the import for Checkin"
 fi
 
-if [[ -f "YELP_PATH/yelp_academic_dataset_user.json"]]; then
+if [[ -f "$YELP_PATH/yelp_academic_dataset_user.json" ]]; then
     echo " "
     echo "Importing User Collection"
     mongoimport --db yelp --collection user --file "$YELP_PATH/yelp_academic_dataset_user.json"
