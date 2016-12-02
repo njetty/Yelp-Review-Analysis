@@ -84,17 +84,14 @@ done
 # Main logic
 mongo --eval "db.stats()" >/dev/null 2>&1  # do a simple harmless command of some sort
 
-if [ $? -eq 0 ]; then
-    echo "mongodb running!"
-else
-    echo "mongodb not running!"
-    exit 1
+if [ $? -ne 0 ]; then
+    error_exit "MongoDB Server is not running"
 fi
 
 cwd=$(pwd)
 
 if [[ -z "$YELP_PATH" ]]; then
-    error_exit "path is not given"
+    error_exit "Path is not specified or an Empty String is specified"
 fi
 
 if [[ -d $YELP_PATH ]]; then
@@ -104,26 +101,48 @@ else
 fi
 
 echo "Starting the import process of Yelp Dataset"
-echo " "
-echo "Importing Business Collection"
-mongoimport --db yelp --collection business --file "$YELP_PATH/yelp_academic_dataset_business.json"
 
-echo " "
-echo "Importing Tip Collection"
-mongoimport --db yelp --collection tip --file "$YELP_PATH/yelp_academic_dataset_tip.json"
+if [[ -f "$YELP_PATH/yelp_academic_dataset_business.json" ]]; then
+    echo " "
+    echo "Importing Business Collection"
+    mongoimport --db yelp --collection business --file "$YELP_PATH/yelp_academic_dataset_business.json"
+else
+    echo "File yelp_academic_dataset_business.json not found at $YELP_PATH, skipping the import for Business"
+fi
 
-echo " "
-echo "Importing Review Collection"
-mongoimport --db yelp --collection reviews --file "$YELP_PATH/yelp_academic_dataset_review.json"
+if [[ -f "YELP_PATH/yelp_academic_dataset_tip.json"]]; then
+    echo " "
+    echo "Importing Tip Collection"
+    mongoimport --db yelp --collection tip --file "$YELP_PATH/yelp_academic_dataset_tip.json"
+else
+    echo "File yelp_academic_dataset_tip.json not found at $YELP_PATH, skipping the import for Tip"
+fi
 
-echo " "
-echo "Importing Checkin Collection"
-mongoimport --db yelp --collection checkin --file "$YELP_PATH/yelp_academic_dataset_checkin.json"
+if [[ -f "YELP_PATH/yelp_academic_dataset_review.json"]]; then
+    echo " "
+    echo "Importing Review Collection"
+    mongoimport --db yelp --collection reviews --file "$YELP_PATH/yelp_academic_dataset_review.json"
+else
+    echo "File yelp_academic_dataset_review.json not found at $YELP_PATH, skipping the import for Review"
+fi
 
-echo " "
-echo "Importing User Collection"
-mongoimport --db yelp --collection user --file "$YELP_PATH/yelp_academic_dataset_user.json"
+if [[ -f "YELP_PATH/yelp_academic_dataset_checkin.json"]]; then
+    echo " "
+    echo "Importing Checkin Collection"
+    mongoimport --db yelp --collection checkin --file "$YELP_PATH/yelp_academic_dataset_checkin.json"
+else
+    echo "File yelp_academic_dataset_checkin.json not found at $YELP_PATH, skipping the import for Checkin"
+fi
 
-cd $cwd
+if [[ -f "YELP_PATH/yelp_academic_dataset_user.json"]]; then
+    echo " "
+    echo "Importing User Collection"
+    mongoimport --db yelp --collection user --file "$YELP_PATH/yelp_academic_dataset_user.json"
+else
+    echo "File yelp_academic_dataset_user.json not found at $YELP_PATH, skipping the import for User"
+fi
+
+echo ""
+echo "Importing of Yelp Dataset completed"
 
 graceful_exit
