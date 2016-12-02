@@ -145,4 +145,11 @@ fi
 echo ""
 echo "Importing of Yelp Dataset completed"
 
+echo ""
+echo "Indexing the collections 'Review' and 'Tip' with business_id"
+mongo < EnsureIndex.js
+echo ""
+echo "Indexing Completed"
+
+
 graceful_exit
