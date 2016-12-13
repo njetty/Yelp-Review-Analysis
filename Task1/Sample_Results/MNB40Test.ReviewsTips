@@ -1,0 +1,177 @@
+                                 precision    recall  f1-score   support
+
+                    Accessories       0.00      0.00      0.00       176
+                    Active Life       1.00      0.25      0.39       428
+            Adult Entertainment       0.00      0.00      0.00        53
+                       Airports       0.00      0.00      0.00         8
+                 American (New)       0.00      0.00      0.00       664
+         American (Traditional)       0.00      0.00      0.00      1058
+                Amusement Parks       0.00      0.00      0.00        31
+                     Apartments       1.00      0.04      0.07       356
+                  Arts & Crafts       0.00      0.00      0.00        34
+           Arts & Entertainment       0.98      0.10      0.18       476
+                   Asian Fusion       0.00      0.00      0.00       200
+                 Auto Detailing       0.00      0.00      0.00        83
+            Auto Glass Services       0.00      0.00      0.00        41
+          Auto Parts & Supplies       0.00      0.00      0.00       145
+                    Auto Repair       0.93      0.39      0.55       604
+                     Automotive       0.97      0.77      0.86      1325
+                         Bagels       0.00      0.00      0.00        93
+                       Bakeries       0.50      0.00      0.00       408
+                       Barbeque       0.00      0.00      0.00       246
+                        Barbers       0.00      0.00      0.00       216
+                           Bars       0.77      0.24      0.36      1730
+                  Beauty & Spas       1.00      0.89      0.94      2315
+           Beer, Wine & Spirits       0.00      0.00      0.00       197
+     Books, Mags, Music & Video       0.00      0.00      0.00         5
+             Breakfast & Brunch       0.21      0.02      0.04       639
+                      Breweries       0.00      0.00      0.00        79
+                        British       0.00      0.00      0.00        59
+                     Bubble Tea       0.00      0.00      0.00        24
+                        Buffets       0.00      0.00      0.00       157
+                        Burgers       0.00      0.00      0.00       754
+                          Cafes       0.14      0.07      0.09       384
+                   Cajun/Creole       0.00      0.00      0.00        43
+                 Canadian (New)       0.00      0.00      0.00        88
+                    Car Dealers       0.00      0.00      0.00       155
+                     Car Rental       0.00      0.00      0.00       117
+                       Car Wash       0.00      0.00      0.00       179
+                      Caribbean       0.00      0.00      0.00        42
+                Carpet Cleaning       0.00      0.00      0.00        62
+                        Casinos       0.00      0.00      0.00        88
+                  Chicken Wings       0.00      0.00      0.00       324
+                        Chinese       0.62      0.01      0.02       650
+           Chocolatiers & Shops       0.00      0.00      0.00        41
+                         Cinema       0.00      0.00      0.00        76
+                  Cocktail Bars       0.00      0.00      0.00       107
+                   Coffee & Tea       0.54      0.06      0.11       878
+                   Comfort Food       0.00      0.00      0.00        35
+             Convenience Stores       0.00      0.00      0.00       326
+              Cosmetic Dentists       0.00      0.00      0.00       136
+      Cosmetics & Beauty Supply       0.00      0.00      0.00       279
+                      Creperies       0.00      0.00      0.00        32
+                    Dance Clubs       0.00      0.00      0.00       140
+                       Day Spas       0.00      0.00      0.00       259
+                          Delis       0.00      0.00      0.00       265
+                       Dentists       1.00      0.44      0.62       281
+              Department Stores       0.00      0.00      0.00       225
+                       Desserts       0.00      0.00      0.00       223
+                        Dim Sum       0.00      0.00      0.00        12
+                         Diners       0.00      0.00      0.00       162
+                      Dive Bars       0.00      0.00      0.00       103
+                        Doctors       0.00      0.00      0.00        89
+                         Donuts       0.00      0.00      0.00       125
+                     Drugstores       0.00      0.00      0.00       284
+         Dry Cleaning & Laundry       0.00      0.00      0.00       226
+                      Education       0.00      0.00      0.00         4
+                    Electronics       0.00      0.00      0.00        63
+                    Ethnic Food       0.00      0.00      0.00        63
+      Event Planning & Services       0.93      0.14      0.24       702
+                Eyelash Service       0.00      0.00      0.00       114
+                        Fashion       0.95      0.06      0.12       628
+                      Fast Food       1.00      0.01      0.01      1220
+             Financial Services       0.00      0.00      0.00         6
+          Fitness & Instruction       1.00      0.19      0.32       294
+                Flowers & Gifts       0.00      0.00      0.00        22
+                           Food       0.87      0.57      0.68      3185
+                    Food Trucks       0.00      0.00      0.00       111
+                         French       0.15      0.04      0.07       178
+               Furniture Stores       0.00      0.00      0.00       116
+         Gas & Service Stations       0.00      0.00      0.00       229
+                     Gastropubs       0.00      0.00      0.00        64
+              General Dentistry       0.93      0.06      0.10       253
+                         German       0.11      0.45      0.18        44
+                    Gluten-Free       0.00      0.00      0.00        89
+                          Greek       0.08      0.04      0.05       141
+                        Grocery       0.00      0.00      0.00       499
+                           Gyms       1.00      0.04      0.08       204
+                   Hair Removal       0.00      0.00      0.00       266
+                    Hair Salons       0.98      0.24      0.38       768
+                  Hair Stylists       0.00      0.00      0.00        87
+                       Hawaiian       0.00      0.00      0.00        65
+               Health & Medical       0.99      0.55      0.71       443
+Heating & Air Conditioning/HVAC       0.00      0.00      0.00       153
+                  Home & Garden       0.00      0.00      0.00       213
+                     Home Decor       0.00      0.00      0.00       113
+                  Home Services       0.99      0.27      0.42       613
+                       Hot Dogs       0.00      0.00      0.00        98
+                         Hotels       0.55      0.06      0.10       575
+                Hotels & Travel       0.79      0.21      0.33       791
+  IT Services & Computer Repair       0.00      0.00      0.00        32
+      Ice Cream & Frozen Yogurt       1.00      0.00      0.01       394
+                         Indian       0.00      0.00      0.00       156
+                          Irish       0.00      0.00      0.00        34
+                        Italian       0.15      0.04      0.06       730
+                       Japanese       0.00      0.00      0.00       364
+                        Jewelry       0.00      0.00      0.00       138
+         Juice Bars & Smoothies       0.00      0.00      0.00       169
+                        Karaoke       0.00      0.00      0.00        42
+                         Korean       0.00      0.00      0.00        94
+                 Latin American       0.00      0.00      0.00        56
+                 Local Services       1.00      0.00      0.01       345
+                        Lounges       0.00      0.00      0.00       228
+                        Massage       0.00      0.00      0.00       201
+                  Mediterranean       0.00      0.00      0.00       180
+                 Men's Clothing       0.00      0.00      0.00       141
+                        Mexican       0.96      0.52      0.68      1027
+                 Middle Eastern       0.00      0.00      0.00        63
+                  Mobile Phones       0.00      0.00      0.00       104
+                        Museums       0.00      0.00      0.00        56
+                   Music Venues       0.00      0.00      0.00       130
+                    Nail Salons       0.98      0.76      0.85       730
+                      Nightlife       0.83      0.37      0.51      1960
+                        Noodles       0.00      0.00      0.00        23
+            Oil Change Stations       0.00      0.00      0.00       191
+                   Optometrists       0.00      0.00      0.00        54
+                          Parks       0.00      0.00      0.00        91
+         Party & Event Planning       0.00      0.00      0.00        30
+                Performing Arts       0.00      0.00      0.00       127
+       Pet Boarding/Pet Sitting       0.00      0.00      0.00       100
+                   Pet Groomers       0.00      0.00      0.00       199
+                   Pet Services       0.00      0.00      0.00       291
+                     Pet Stores       0.00      0.00      0.00       111
+                           Pets       1.00      0.50      0.67       524
+                          Pizza       0.88      0.14      0.24      1113
+                       Plumbing       0.00      0.00      0.00        97
+          Professional Services       0.00      0.00      0.00        20
+   Public Services & Government       0.00      0.00      0.00        36
+                           Pubs       0.00      0.00      0.00       365
+                          Ramen       0.00      0.00      0.00        19
+                    Real Estate       1.00      0.05      0.09       368
+                        Resorts       0.00      0.00      0.00        16
+                    Restaurants       0.89      0.98      0.93      9753
+                          Salad       0.00      0.00      0.00       215
+                     Sandwiches       1.00      0.00      0.01      1041
+                        Seafood       0.00      0.00      0.00       247
+                       Shopping       0.99      0.54      0.70      1692
+               Shopping Centers       0.00      0.00      0.00        65
+                      Skin Care       0.00      0.00      0.00       226
+                      Soul Food       0.00      0.00      0.00        43
+                           Soup       0.00      0.00      0.00        73
+                       Southern       0.00      0.00      0.00        73
+                        Spanish       0.00      0.00      0.00        23
+                 Specialty Food       0.00      0.00      0.00       161
+                 Sporting Goods       0.00      0.00      0.00        62
+                    Sports Bars       0.00      0.00      0.00       370
+                    Steakhouses       0.00      0.00      0.00       237
+                     Sushi Bars       0.50      0.00      0.01       329
+                        Tanning       0.00      0.00      0.00        84
+                     Tapas Bars       0.00      0.00      0.00        33
+             Tapas/Small Plates       0.00      0.00      0.00        41
+                        Tex-Mex       0.00      0.00      0.00       129
+                           Thai       0.00      0.00      0.00       215
+                          Tires       0.00      0.00      0.00       230
+                          Tours       0.00      0.00      0.00        69
+                       Trainers       0.00      0.00      0.00       126
+                 Transportation       0.00      0.00      0.00        11
+                          Vegan       0.00      0.00      0.00        77
+                     Vegetarian       0.00      0.00      0.00       119
+          Venues & Event Spaces       0.00      0.00      0.00       150
+                  Veterinarians       1.00      0.01      0.02       221
+                     Vietnamese       0.00      0.00      0.00       161
+                         Waxing       0.00      0.00      0.00       158
+                      Wine Bars       0.00      0.00      0.00       140
+               Women's Clothing       0.00      0.00      0.00       333
+                           Yoga       0.00      0.00      0.00        70
+
+                    avg / total       0.59      0.33      0.37     59580
